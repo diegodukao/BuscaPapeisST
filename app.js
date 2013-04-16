@@ -27,9 +27,10 @@ Ext.application({
         'Ext.MessageBox'
     ],
 
-    views: [
-        'Main'
-    ],
+    models: ['Papel', 'GraficoPonto'],
+    stores: ['Papeis', 'GraficoPontos'],
+    views: ['Main', 'Papeis', 'Grafico', 'Demos', 'Demos2'],
+    controllers: ['Application'],
 
     icon: {
         '57': 'resources/icons/Icon.png',
@@ -54,7 +55,9 @@ Ext.application({
         Ext.fly('appLoadingIndicator').destroy();
 
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('BuscaPapeisST.view.Main'));
+        Ext.Viewport.add({
+            xclass: 'BuscaPapeisST.view.Main'
+        });
     },
 
     onUpdated: function() {
