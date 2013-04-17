@@ -1,7 +1,6 @@
 Ext.define('BuscaPapeisST.view.Demos', {
     extend: 'Ext.Panel',
     xtype: 'demosview',
-    requires: ['Ext.Label'],
     
     requires: [
         'Ext.form.FieldSet',
@@ -12,7 +11,8 @@ Ext.define('BuscaPapeisST.view.Demos', {
         'Ext.field.Radio',
         'Ext.field.Slider',
         'Ext.field.Toggle',
-        'Ext.field.Search'
+        'Ext.field.Search',
+        'Ext.Label'
     ],
     
     config: {

@@ -29,7 +29,8 @@ Ext.application({
 
     models: ['Papel', 'GraficoPonto'],
     stores: ['Papeis', 'GraficoPontos'],
-    views: ['Main', 'Papeis', 'Grafico', 'Demos', 'Demos2'],
+    views: ['Main', 'Papeis', 'Grafico', 'Demos', 'Demos2', 
+            'DemosPhonegap'],
     controllers: ['Application'],
 
     icon: {

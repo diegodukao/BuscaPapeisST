@@ -8,6 +8,7 @@ Ext.define('BuscaPapeisST.controller.Application', {
             searchButton: '#searchButton',
             demosButton: '#demosButton',
             outrosDemosButton: '#outrosDemosButton',
+            phonegapDemosButton: '#phonegapDemosButton',
             plmin: '#plmin',
             roemin: '#roemin',
             divptrmin: '#divptrmin',
@@ -28,6 +29,9 @@ Ext.define('BuscaPapeisST.controller.Application', {
             },
             outrosDemosButton: {
                 tap: 'onOutrosDemosChosen'
+            },
+            phonegapDemosButton: {
+                tap: 'onPhonegapDemosButtonChosen'
             }
         }
     },
@@ -57,6 +61,10 @@ Ext.define('BuscaPapeisST.controller.Application', {
     
     onOutrosDemosChosen: function() {
         this.getMain().push(Ext.create('BuscaPapeisST.view.Demos2'));
+    },
+    
+    onPhonegapDemosButtonChosen: function() {
+        this.getMain().push(Ext.create('BuscaPapeisST.view.DemosPhonegap'));
     }
 });
 
