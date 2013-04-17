@@ -83,11 +83,6 @@ Ext.define('BuscaPapeisST.view.Form', {
                     },
                     {
                         xtype: 'button',
-                        id: 'cleanButton',
-                        text: 'Limpar'
-                    },
-                    {
-                        xtype: 'button',
                         id: 'demosButton',
                         text: 'Demos'
                     },
